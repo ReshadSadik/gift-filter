@@ -43,7 +43,7 @@ function Nabvar(props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Typography>
-          main content here
+          main content there
         </Typography>
       </Box>
     </Box>
