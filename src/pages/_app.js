@@ -1,21 +1,13 @@
-import '@/styles/globals.css'
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-const theme = createTheme({
-  palette: {
-    primary: {
-      main : "#1976d2"
-    },
-    text: {
-      success: "#00FF00",
-      danger :"#FF0000"
-    }
- }
-});
+import Nabvar from "@/components/navbar/Nabvar";
+import "@/styles/globals.css";
+import { theme } from "@/theme";
+import { ThemeProvider } from "@mui/material/styles";
+
 export default function App({ Component, pageProps }) {
-  
   return (
-     <ThemeProvider theme={theme}>
-       < Component {...pageProps } />
-     </ThemeProvider>
-  )
+    <ThemeProvider theme={theme}>
+      <Nabvar />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
